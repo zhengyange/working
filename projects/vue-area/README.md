@@ -1,4 +1,4 @@
-# p-temp
+# vue-area
 
 > A Vue.js project
 

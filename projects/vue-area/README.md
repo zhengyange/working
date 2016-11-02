@@ -5,12 +5,12 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 项目根目录working下，安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 在具体项目下：projects/vue-area，执行 
 npm run dev
-
+localhost:8080
 # build for production with minification
 npm run build
 
@@ -24,4 +24,3 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

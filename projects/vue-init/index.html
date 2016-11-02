@@ -27,16 +27,14 @@
       }
     </style>
     <% if(production){ %>  
-    <link href="/<%= projectName %>/static/css/app.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
     <% } %>
   </head>
   <body>
-
     <div id="app"></div>
   <% if(production){ %>  
-  <script type="text/javascript" src="/<%= projectName %>/static/js/manifest.js?v=<%= new Date().getTime()%>"></script>
-  <script type="text/javascript" src="/<%= projectName %>/static/js/vendor.js?v=<%= new Date().getTime()%>"></script>
-  <script type="text/javascript" src="/<%= projectName %>/static/js/app.js?v=<%= new Date().getTime()%>"></script>
+  <script type="text/javascript" src="/static/js/vendor.js?v=<%= new Date().getTime()%>"></script>
+  <script type="text/javascript" src="/static/js/app.js?v=<%= new Date().getTime()%>"></script>
   <% } %>
   </body>
 </html>

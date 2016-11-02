@@ -39,7 +39,8 @@ exports.cssLoaders = function (options) {
     css: generateLoaders(['css']),
     postcss: generateLoaders(['css']),
     less: generateLoaders(['css', 'less']),
-    sass: generateLoaders(['css', 'sass?indentedSyntax']),
+    // sass: generateLoaders(['css', 'sass?indentedSyntax']),
+    sass: generateLoaders(['css', 'sass']),
     scss: generateLoaders(['css', 'sass']),
     stylus: generateLoaders(['css', 'stylus']),
     styl: generateLoaders(['css', 'stylus'])
@@ -58,4 +59,9 @@ exports.styleLoaders = function (options) {
     })
   }
   return output
+}
+exports.getProjectName = function(){
+  var dirName = process.cwd().split(path.sep);
+  var projectName = dirName[dirName.length - 1];
+  return projectName;
 }

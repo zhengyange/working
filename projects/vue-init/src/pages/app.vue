@@ -4,7 +4,11 @@
         //data:function(){}，下面是es6写法
         data () {
             return {
-                result: null,
+                result: {
+                  province: '',
+                  city: '',
+                  area: ''
+                },
                 show: false
             }
         },
@@ -12,6 +16,7 @@
           handleAreaSelect(result){
             console.log(result)
             this.show = false;
+            this.result = result;
           }
         },
         components: {
@@ -25,10 +30,10 @@
   <div>
     <div class="wrap">
       <img src="../assets/logo.png">
-      <a href="javascript:;" @click="show = true">Hello Vue.js!</a>
-      <!-- <p v-cloak>省：{{result.province.name}} {{result.province.code}}</p>
+      <a href="javascript:;" @click="show = true">选择地址</a>
+      <p v-cloak>省：{{result.province.name}} {{result.province.code}}</p>
       <p v-cloak>市：{{result.city.name}} {{result.city.code}}</p>
-      <p v-cloak>区：{{result.area.name}} {{result.area.code}}</p> -->
+      <p v-cloak>区：{{result.area.name}} {{result.area.code}}</p>
     
     </div>
     <vue-area :show="show" @select-submit="handleAreaSelect"></vue-area>

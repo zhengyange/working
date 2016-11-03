@@ -1,17 +1,17 @@
 # p-temp
 
-> A Vue.js project
+> 此项目或脚手架，根据vue-cli升级，支持多项目开发
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+## 在项目根目录，执行下面命令，安装各种依赖包
 npm install
 
-# serve with hot reload at localhost:8080
+## 进入projects/xxx的具体项目下，执行下面的命令 浏览器自动打开：localhost:8080
 npm run dev
 
-# build for production with minification
+# 打包编译
 npm run build
 
 # run unit tests
@@ -24,4 +24,3 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

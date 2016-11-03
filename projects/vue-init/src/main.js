@@ -1,16 +1,6 @@
-// import Vue from 'vue'
-// import App from './App'
-
-//  eslint-disable no-new 
-// new Vue({
-//   el: '#app',
-//   template: '<App/>',
-//   components: { App }
-// })
-//es6语法：
 import Vue from "vue";
 
-import App from './pages/app.vue';
+import App from './App.vue';
 
 Vue.config.debug = true;//开启错误提示
 

@@ -25,6 +25,9 @@
       [v-cloak] {
           display: none;
       }
+      html,body{
+        height: 100%;
+      }
     </style>
     <% if(production){ %>  
     <link href="/static/css/app.css" rel="stylesheet">
@@ -32,7 +35,12 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <div id="main" style="height: 100%;"></div>
+    <!--
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    --> 
+
   <% if(production){ %>  
   <script type="text/javascript" src="/static/js/vendor.js?v=<%= new Date().getTime()%>"></script>
   <script type="text/javascript" src="/static/js/app.js?v=<%= new Date().getTime()%>"></script>

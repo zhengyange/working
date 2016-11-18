@@ -1,0 +1,57 @@
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+
+#header {
+  color: @light-blue;
+}
+
+// 混合
+.bordered{
+	border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#menu a {
+	color: #111;
+	height: 100% - 10px;
+	.bordered;
+}
+.post a{
+	color: red;
+	.bordered;
+}
+
+//嵌套规则 ，和sass写法一样
+
+// 内部使用父选择器
+.clearfix{
+	display: block;
+	zoom: 1;
+	&:after{
+		content: " ";
+	    display: block;
+	    font-size: 0;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+}
+
+#bundle {
+  .button {
+    display: block;
+    border: 1px solid black;
+    background-color: grey;
+    &:hover {
+      background-color: white
+    }
+  }
+}
+#header a {
+  color: orange;
+  #bundle > .button;
+}
+
+
+
+

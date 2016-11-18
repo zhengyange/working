@@ -25,14 +25,22 @@
       [v-cloak] {
           display: none;
       }
+      html, body{
+        height: 100%;
+        width: 100%;
+      }
     </style>
     <% if(production){ %>  
     <link href="/static/css/app.css" rel="stylesheet">
     <% } %>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <div id="app">
+      <button type="button" id="shanghai">上海</button>
+      <button type="button" id="beijing">北京</button>
+      <button type="button" id="china">全国</button>
+    </div>
+    <div id="main" style="width: 100%;height:100%;"></div>
   <% if(production){ %>  
   <script type="text/javascript" src="/static/js/vendor.js?v=<%= new Date().getTime()%>"></script>
   <script type="text/javascript" src="/static/js/app.js?v=<%= new Date().getTime()%>"></script>

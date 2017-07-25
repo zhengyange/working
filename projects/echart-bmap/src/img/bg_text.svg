@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="183px" height="89px" viewBox="0 0 183 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_text</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="47.1675009 0.981718864 161.721475 0.981718864 164.832499 4.56911912 164.832499 32.6664489 51.8733946 32.6664489 47.1675009 25.8309011"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.309803922   0 0 0 0 0.968627451   0 0 0 0 0.898039216  0 0 0 0.624716938 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="18f" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="地图2" transform="translate(-917.000000, -311.000000)">
+            <g id="地图" transform="translate(-207.000000, -0.196759)">
+                <g id="Group-12" transform="translate(411.002579, 6.982277)">
+                    <g id="bg_text" transform="translate(712.727071, 321.213365)">
+                        <g id="Rectangle-16">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#4FF7E5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <polyline id="Path-13" stroke-opacity="0.653192935" stroke="#0A0F13" points="81.1194968 33.8548789 85.1293211 30.5116362 109.907996 30.5116362 113.279512 33.8548789"></polyline>
+                        <polyline id="Path-12" stroke-opacity="0.540449502" stroke="#4FF7E5" points="0.958077269 71.4447655 52.2544535 35.485193 162.796675 35.485193"></polyline>
+                        <polyline id="Path-12" stroke-opacity="0.540449502" stroke="#4FF7E5" stroke-width="0.5" points="38.339693 49.4777698 53.2544535 38.485193 67.3579808 38.485193"></polyline>
+                        <polyline id="Path-9" stroke-opacity="0.652173913" stroke="#0A0F13" stroke-linecap="round" stroke-linejoin="round" points="136.152365 0.909911047 141.271748 4.61212607 155.102183 4.61212607 162.078292 12.1595855 162.078292 32.8173881"></polyline>
+                        <path d="M157.795467,1.03859981 L164.698585,8.5766215" id="Path-11" stroke-opacity="0.645295516" stroke="#0A0F13" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

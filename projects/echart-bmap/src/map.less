@@ -1,0 +1,79 @@
+*{padding: 0; margin: 0;}
+body, div{box-sizing: border-box;}
+html, body{ width: 100%; height: 100%;}
+body{ background-color: rgb(10,15,19);  font-size: 14px;font-family: 'Microsoft YaHei';color: #fff}
+#map-name{position: absolute; top:3%; left: 3%; width: 230px; height: 80px; cursor: pointer; z-index: 99999; background: url('./img/bg_city.svg') left top no-repeat; background-size: 100%; font-size: 1.4rem;text-align: right; font-weight: 600;
+	span{display: inline-block; width: 100px; position: absolute; right: 34px; top: 25px; color: #000; text-align: center;}
+}
+#svg{width: 100%; height: 100%;}
+.china-name{width: 100%; height: 100%;}
+
+/*自定义提示样式*/
+// background: rgba(255,255,255, 0.5) url('./img/bg_text.svg') left top no-repeat;
+#tooltip-wrap{  background-size: 100% 100%; position: absolute; z-index: 999999;width: 200px;height: 97px;
+	#svg-tooltip{position: absolute; top: 0; left: 0; width: 100%;}
+	.tooltip-bg{width: 100%; height: 100%;}
+	img{width: 100%; height: 100%;}
+}
+
+
+#tooltip-wrap .city-name{ position: absolute; right: 0;
+    top: 26px;
+    color: #0A0F13;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    padding-right: 40px;
+    overflow: hidden;
+	i{font-size: 0.4rem; font-style: normal;padding-left: 2px;}
+}
+#tooltip-wrap.china-tooltip{width: 200px; height: 97px;
+	.city-name{right: 23px; top: 26px; font-size: 1.2rem; width: 125px; height: auto; text-align: center; padding-right: 0;
+		i{font-size: 0.7rem;}
+	}
+}
+#tooltip-wrap .split-line{color: rgb(255, 255, 255, .5);}
+#tooltip-wrap .value{color: rgb(255, 255, 255);}
+#map{width: 100%; height: 100%;}
+
+.citys-wrap{position: absolute; width: 20rem; left: 1.4rem; bottom: 1.4rem; background:url('./img/left_gray.svg') left top no-repeat, url('./img/right_gray.svg') right bottom no-repeat; background-size: 0.8rem; padding-top: 10px; padding-bottom: 10px; display: none;
+	.text-table{display: table; width: 100%;
+		span{width: 50%; display: table-cell;}
+		.city-name{text-align: right; padding-right: 10px; font-size: 1rem;}
+		.city-nums{text-align: left; padding-left: 10px; font-size: 1rem;}
+	}
+	span{color: #8F9193;}
+	.city-cars{list-style: none;}
+	li{width: 10rem; display: inline-block; line-height: 2.5rem; font-size: 0.8rem; text-align: center;}
+	.left-top, .right-bottom{position: absolute; display: inline-block; border-color: #B5B6B6; width: 1rem; height: 1rem; border-style: solid; border-width: 0;}
+	.left-top{top:0; left:0; border-top-width: 1px; border-left-width: 1px;}
+}
+
+// 隐藏掉百度地图相关标志
+.anchorBL, .BMap_cpyCtrl{display: none!important;}
+
+.page-radius{position: absolute;  width: 20px; height: 20px; display: inline-block; background-position: left top; background-repeat: no-repeat; z-index: 9999;}
+.page-radius-1{bottom: .7rem; left: .7rem; background-image: url('./img/left1.svg'); background-size: 100%; }
+.page-radius-2{top: .7rem; left: .7rem; background-image: url('./img/left2.svg'); background-size: 100%; }
+.page-radius-3{top: .7rem; right: .7rem; background-image: url('./img/right1.svg'); background-size: 100%; }
+.page-radius-4{bottom: .7rem; right: .7rem; background-image: url('./img/right2.svg'); background-size: 100%; }
+#start{position: fixed; z-index: 9999;     width: 100px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0.8rem;
+    top: 0.8rem;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px; cursor: pointer;}
+#time-wrap{position: fixed; z-index: 9999; left: 3rem; bottom: 2rem; color: #fff; font-size: 20px;font-family: 微软雅黑;
+
+}
+
+
+
+
+
+
